@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Using TailwindCSS in your Shopify theme",
   "scripts": {
-    "test": "shopify theme check",
-    "dev": "concurrently \"shopify theme dev\" \"npx tailwindcss -i ./assets/tailwind.css -o ./assets/tailwind.min.css -m -w\"",
-    "shop:dev": "shopify theme dev",
+    "dev": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/tailwind.min.css -m -w",
     "tw:dev": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/tailwind.min.css -m -w",
     "tw:build": "npx tailwindcss -i ./assets/tailwind.css -o ./assets/tailwind.min.css -m && npx tailwindcss -i ./assets/tailwind.css -o ./assets/tailwind.build.css"
   },
